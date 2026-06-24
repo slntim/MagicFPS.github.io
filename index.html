@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MagicFPS — Boostez votre PC</title>
 <meta name="description" content="MagicFPS analyse, nettoie et optimise Windows en un clic. Boot plus rapide, RAM libérée, fichiers inutiles supprimés.">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -79,11 +82,9 @@
     color: var(--fg);
   }
   .nav__brand-icon {
-    width: 32px; height: 32px;
-    background: linear-gradient(135deg, var(--accent), var(--blue));
-    border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 16px;
+    width: 34px; height: 34px;
+    object-fit: contain;
+    flex-shrink: 0;
   }
   .nav__links {
     display: flex; gap: 36px;
@@ -438,7 +439,7 @@
 <nav class="nav">
   <div class="wrap nav__row">
     <div class="nav__brand">
-      <div class="nav__brand-icon">⚡</div>
+      <img src="assets/logo-nav.png" alt="MagicFPS" class="nav__brand-icon">
       MagicFPS
     </div>
     <div class="nav__links">
@@ -448,7 +449,7 @@
       <a href="#tarifs">Tarifs</a>
     </div>
     <div class="nav__actions">
-      <a href="https://discord.gg/eNbwG4yM3K" class="btn btn--primary" target="_blank">Acheter — 45€</a>
+      <a href="https://discord.gg/eNbwG4yM3K" class="btn btn--primary" target="_blank">Acheter</a>
     </div>
   </div>
 </nav>
@@ -465,7 +466,7 @@
     </h1>
     <p class="hero__desc">MagicFPS analyse votre système, supprime ce qui le ralentit et optimise le démarrage — en un clic, sans toucher à vos fichiers personnels.</p>
     <div class="hero__actions">
-      <a href="https://discord.gg/eNbwG4yM3K" class="btn btn--primary btn--lg" target="_blank">⚡ Acheter — 45€ à vie</a>
+      <a href="https://discord.gg/eNbwG4yM3K" class="btn btn--primary btn--lg" target="_blank">⚡ Acheter — 30€ à vie</a>
       <a href="#comment-ca-marche" class="btn btn--ghost btn--lg">Voir comment ça marche</a>
     </div>
     <div class="hero__stats">
@@ -657,7 +658,7 @@
         <div class="price-card__glow"></div>
         <div class="price-card__tag">MagicFPS Pro</div>
         <div class="price-card__name">Licence à vie</div>
-        <div class="price-card__price"><span class="currency">€</span>45</div>
+        <div class="price-card__price"><span class="currency">€</span>30</div>
         <div class="price-card__period">Paiement unique — accès à vie</div>
         <ul class="price-card__list">
           <li>Nettoyage automatique programmé</li>
@@ -678,7 +679,7 @@
     <h2 class="cta-banner__title">Votre PC mérite de tourner<br>comme le premier jour.</h2>
     <p class="cta-banner__desc">Paiement unique. Accès à vie. Installation en 30 secondes.</p>
     <div class="cta-banner__actions">
-      <a href="https://discord.gg/eNbwG4yM3K" class="btn btn--primary btn--lg" target="_blank">⚡ Acheter — 45€ à vie</a>
+      <a href="https://discord.gg/eNbwG4yM3K" class="btn btn--primary btn--lg" target="_blank">⚡ Acheter — 30€ à vie</a>
       <a href="#comment-ca-marche" class="btn btn--ghost btn--lg">En savoir plus</a>
     </div>
   </div>
@@ -687,7 +688,7 @@
 <footer>
   <div class="wrap">
     <div class="footer__row">
-      <div class="footer__brand">⚡ MagicFPS</div>
+      <div class="footer__brand"><img src="assets/logo-nav.png" alt="MagicFPS" style="width:20px;height:20px;vertical-align:-4px;margin-right:6px;">MagicFPS</div>
       <div class="footer__links">
         <a href="#fonctionnalites">Fonctionnalités</a>
         <a href="#tarifs">Tarifs</a>
